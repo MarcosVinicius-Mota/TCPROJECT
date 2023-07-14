@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="generalArea" prefHeight="594.0" prefWidth="834.0" stylesheets="@MainWindowStyle.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.trabalhodetc.lucas_marley_walter.MainWindowController">
+   <children>
+      <BorderPane fx:id="borderPane" layoutX="91.0" layoutY="37.0" prefHeight="200.0" prefWidth="216.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <left>
+            <AnchorPane fx:id="menuBar" prefHeight="594.0" prefWidth="235.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Text fill="#c2c2c2" layoutX="20.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="JFlap volume 2" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="26.0">
+                     <font>
+                        <Font name="SansSerif Regular" size="15.0" />
+                     </font>
+                  </Text>
+                  <VBox layoutX="25.0" layoutY="57.0" prefHeight="409.0" prefWidth="192.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="17.0">
+                     <children>
+                        <Button fx:id="open" alignment="TOP_LEFT" mnemonicParsing="false" onMouseClicked="#abrir" onMouseEntered="#hoveropen" onMouseExited="#deshoveropen" prefHeight="39.0" prefWidth="192.0" styleClass="generalButton" text="Open">
+                           <graphic>
+                              <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/openImage.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font name="Microsoft Sans Serif" size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="8.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button fx:id="gptButton" alignment="TOP_LEFT" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#criarGpt" onMouseEntered="#hoverGpt" onMouseExited="#deshoverGpt" prefHeight="39.0" prefWidth="192.0" styleClass="generalButton" text="Create with GPT">
+                           <graphic>
+                              <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/inteligence.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font name="Microsoft Sans Serif" size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="8.0" top="8.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Line endX="91.29289245605469" layoutX="111.0" layoutY="291.0" startX="-100.0">
+                           <VBox.margin>
+                              <Insets bottom="8.0" top="8.0" />
+                           </VBox.margin>
+                        </Line>
+                        <Button fx:id="unity" alignment="TOP_LEFT" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#unir" onMouseClicked="#unir" onMouseEntered="#hoverUnity" onMouseExited="#deshoverUnity" prefHeight="39.0" prefWidth="192.0" styleClass="generalButton" text="Unity">
+                           <graphic>
+                              <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/unityImage.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font name="Microsoft Sans Serif" size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="8.0" top="8.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button fx:id="intersect" alignment="TOP_LEFT" layoutX="10.0" layoutY="49.0" mnemonicParsing="false" onAction="#intersectar" onMouseClicked="#intersectar" onMouseEntered="#hoverIntersect" onMouseExited="#deshoverIntersect" prefHeight="39.0" prefWidth="192.0" styleClass="generalButton" stylesheets="@MainWindowStyle.css" text="Intersection">
+                           <graphic>
+                              <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/intersectionImage.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font name="Microsoft Sans Serif" size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="8.0" top="8.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button fx:id="concatenation" alignment="TOP_LEFT" layoutX="10.0" layoutY="88.0" mnemonicParsing="false" onAction="#concatenar" onMouseClicked="#concatenar" onMouseEntered="#hoverConcatenation" onMouseExited="#deshoverConcatenation" prefHeight="39.0" prefWidth="192.0" styleClass="generalButton" text="Concatenation">
+                           <graphic>
+                              <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/concatenationImage.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font name="Microsoft Sans Serif" size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="8.0" top="8.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button fx:id="complement" alignment="TOP_LEFT" layoutX="10.0" layoutY="127.0" mnemonicParsing="false" onAction="#complementar" onMouseClicked="#complementar" onMouseEntered="#hoverComplement" onMouseExited="#deshoverComplement" prefHeight="39.0" prefWidth="192.0" styleClass="generalButton" text="Complement">
+                           <graphic>
+                              <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/complementImage.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font name="Microsoft Sans Serif" size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="8.0" top="8.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button fx:id="star" alignment="TOP_LEFT" layoutX="10.0" layoutY="307.0" mnemonicParsing="false" onMouseClicked="#estrela" onMouseEntered="#hoverStar" onMouseExited="#deshoverStar" prefHeight="39.0" prefWidth="192.0" styleClass="generalButton" text="Star">
+                           <graphic>
+                              <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/star.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font name="Microsoft Sans Serif" size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="8.0" top="8.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Line endX="91.29289245605469" startX="-100.0">
+                           <VBox.margin>
+                              <Insets bottom="8.0" top="8.0" />
+                           </VBox.margin></Line>
+                        <Button fx:id="convertAfnToAfd" alignment="TOP_LEFT" layoutX="10.0" layoutY="166.0" mnemonicParsing="false" onAction="#converter" onMouseClicked="#converter" onMouseEntered="#hoverAfnToAfd" onMouseExited="#deshoverAfnToAfd" prefHeight="39.0" prefWidth="192.0" styleClass="generalButton" text="Convert AFN to AFD">
+                           <graphic>
+                              <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/convertImage.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font name="Microsoft Sans Serif" size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="8.0" top="8.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button fx:id="minimization" alignment="TOP_LEFT" layoutX="10.0" layoutY="205.0" mnemonicParsing="false" onAction="#minimizar" onMouseClicked="#minimizar" onMouseEntered="#hoverMinimization" onMouseExited="#deshoverMinimization" prefHeight="39.0" prefWidth="192.0" styleClass="generalButton" text="Minimization">
+                           <graphic>
+                              <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/minimizationImage.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font name="Microsoft Sans Serif" size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="8.0" top="8.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </left>
+      </BorderPane>
+      <ImageView fx:id="maxButton" fitHeight="24.0" fitWidth="24.0" layoutX="753.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="57.0" AnchorPane.topAnchor="18.0">
+         <image>
+            <Image url="@images/maxButton.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="miniButton" fitHeight="22.0" fitWidth="22.0" layoutX="717.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="95.0" AnchorPane.topAnchor="18.0">
+         <image>
+            <Image url="@images/miniButton.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="closeButton" fitHeight="24.0" fitWidth="24.0" layoutX="789.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="23.0" AnchorPane.topAnchor="18.0">
+         <image>
+            <Image url="@images/closeButton.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

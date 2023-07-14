@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane minHeight="568.0" minWidth="586.0" stylesheets="@WAStyle.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.trabalhodetc.lucas_marley_walter.ChatGpt">
+   <children>
+      <AnchorPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane styleClass="workArea" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <ImageView fitHeight="455.0" fitWidth="340.0" layoutX="246.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/broke.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="466.0" fitWidth="377.0" layoutX="278.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/iron.png" />
+                     </image>
+                  </ImageView>
+                  <AnchorPane layoutX="16.0" layoutY="442.0" minHeight="113.0" minWidth="568.0" prefHeight="123.0" prefWidth="570.0" styleClass="cardChatArea">
+                     <children>
+                        <TextArea fx:id="askText" layoutX="16.0" layoutY="35.0" maxHeight="97.0" maxWidth="501.0" minHeight="48.0" minWidth="501.0" prefHeight="74.0" prefWidth="501.0" styleClass="textAreaChatSend" wrapText="true">
+                           <font>
+                              <Font name="SansSerif Bold" size="16.0" />
+                           </font>
+                        </TextArea>
+                        <ScrollPane hbarPolicy="NEVER" layoutX="16.0" layoutY="35.0" maxWidth="503.0" prefHeight="74.0" prefWidth="503.0" styleClass="textAreaChatSend" visible="false" AnchorPane.leftAnchor="16.0" AnchorPane.rightAnchor="51.0" AnchorPane.topAnchor="35.0">
+                          <content>
+                            <AnchorPane visible="false" />
+                          </content>
+                        </ScrollPane>
+                        <Button fx:id="sendButton" layoutX="528.0" layoutY="74.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#sendMessage" prefHeight="26.0" prefWidth="26.0" style="-fx-background-color: TRANSPARENT;">
+                           <graphic>
+                              <ImageView fitHeight="26.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/sendY.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Text fill="#cecece" layoutX="19.0" layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ask to Alcides Stark...">
+                           <font>
+                              <Font name="SansSerif Bold" size="14.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <Pane layoutX="19.0" layoutY="24.0" prefHeight="86.0" prefWidth="298.0" styleClass="cardChatConfig">
+                     <children>
+                        <Text fill="#cecece" layoutX="-25.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Describe the automaton you want to create." wrappingWidth="274.13671875" x="37.0">
+                           <font>
+                              <Font name="SansSerif Bold" size="21.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="19.0" layoutY="122.0" prefHeight="74.0" prefWidth="298.0" styleClass="cardChatConfig">
+                     <children>
+                        <Text fill="#cecece" layoutX="-25.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Created for  your needs." wrappingWidth="274.13671875" x="37.0">
+                           <font>
+                              <Font name="SansSerif Bold" size="21.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="19.0" layoutY="208.0" prefHeight="113.0" prefWidth="298.0" styleClass="cardChatConfig">
+                     <children>
+                        <Text fill="#cecece" layoutX="-25.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="We use an api that communicates directly with ChatGPT." wrappingWidth="274.13671875" x="37.0">
+                           <font>
+                              <Font name="SansSerif Bold" size="21.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="19.0" layoutY="333.0" prefHeight="71.0" prefWidth="298.0" styleClass="cardChatConfig">
+                     <children>
+                        <Text fill="#cecece" layoutX="-25.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Save in a .jff file" wrappingWidth="274.13671875" x="37.0">
+                           <font>
+                              <Font name="SansSerif Bold" size="21.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

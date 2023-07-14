@@ -1,0 +1,89 @@
+.root {
+    -fx-background-color: #272727;
+    -fx-background-radius: 10;
+}
+.alert{
+    -fx-backgroud-color: #141414;
+    -fx-text-fill: white;
+    -fx-background-border: 10;
+}
+.workArea{
+    -fx-background-color: #141414;
+    -fx-background-radius: 10;
+}
+.cardArea{
+    -fx-background-color: #272727;
+    -fx-background-radius: 10;
+    -fx-text-fill: #141414;
+}
+.openButton{
+    -fx-background-color: #717171;
+    -fx-background-radius: 40;
+    -fx-text-fill: #141414;
+}
+.pathArea{
+    -fx-background-color: #383838;
+    -fx-background-radius: 10px;
+    -fx-border-width: 3px;
+    -fx-border-style: solid;
+    -fx-border-color: #717171;
+    -fx-border-radius: 10;
+    -fx-text-fill: #141414;
+    -fx-padding-left: 2;
+}
+.saveButton{
+    -fx-background-color: #D9A900;
+    -fx-background-radius: 40;
+    -fx-text-fill: #141414;
+}
+.areaSwitchButtonUnity{
+    -fx-background-color: #272727;
+    -fx-background-radius: 30;
+}
+.chooseAfdButtonUnity{
+    -fx-background-color: #272727;
+    -fx-background-radius: 30;
+}
+.chooseAfnButtonUnity{
+    -fx-background-color: #FFC700;
+    -fx-background-radius: 30;
+}
+.areaOpenBox{
+    -fx-background-color: #272727;
+    -fx-background-radius: 10;
+}
+.areaLabelBox{
+    -fx-background-color: #383838;
+    -fx-background-radius: 7;
+    -fx-border-width: 2px;
+    -fx-border-style: solid;
+    -fx-border-color: #141414;
+    -fx-border-radius: 7;
+    -fx-text-fill: #141414;
+}
+.areaButtonBox{
+    -fx-background-color: #FFC700;
+    -fx-background-radius: 40;
+    -fx-text-fill: #141414;
+}
+
+.cardChatConfig{
+    -fx-background-color: #060606;
+    -fx-background-radius: 10;
+}
+
+.cardChatArea{
+    -fx-background-color: #000000;
+    -fx-background-radius: 10;
+}
+
+
+.textAreaChatSend{
+    -fx-background-color: #4F4F4F;
+    -fx-background-radius: 10;
+    -fx-border-width: 4px;
+    -fx-border-style: solid;
+    -fx-border-color: #D9A900;
+    -fx-border-radius: 10;
+    -fx-text-fill: #1E1E1E;
+}

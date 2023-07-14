@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane minHeight="568.0" minWidth="586.0" stylesheets="@WAStyle.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.trabalhodetc.lucas_marley_walter.WAController">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="9.0" AnchorPane.leftAnchor="9.0" AnchorPane.rightAnchor="9.0" AnchorPane.topAnchor="9.0">
+         <children>
+            <Pane styleClass="workArea" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <ImageView fitHeight="286.0" fitWidth="292.0" layoutX="138.0" layoutY="132.0" opacity="0.62" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/homeImage.png" />
+                     </image>
+                  </ImageView>
+               </children></Pane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

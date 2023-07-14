@@ -1,0 +1,21 @@
+.root {
+    -fx-background-color: #272727;
+    -fx-background-radius: 10;
+}
+.workArea{
+    -fx-background-color: #141414;
+    -fx-background-radius: 10;
+}
+.generalButton{
+    -fx-background-color: #272727;
+    -fx-background-radius: 10;
+    -fx-text-fill: #000000;
+}
+.paletButton{
+    -fx-background-color: #6D6D6D;
+    -fx-background-radius: 3;
+}
+.paletBoxButton{
+    -fx-background-color: #272727;
+    -fx-background-radius: 3;
+}
